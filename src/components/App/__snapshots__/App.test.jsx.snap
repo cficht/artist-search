@@ -6,7 +6,7 @@ exports[`App component renders App 1`] = `
     <Route
       component={[Function]}
       exact={true}
-      path="/"
+      path="/:search?"
     />
   </Switch>
 </BrowserRouter>

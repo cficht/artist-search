@@ -7,8 +7,10 @@ describe('Search component', () => {
     const wrapper = shallow(<Search 
       artistText="The Beatles"
       artists={[]}
+      page={0}
       handleChange={()=>{}}
-      handleSubmit={()=>{}} />);
+      handleSubmit={()=>{}}
+      handlePage={()=>{}} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

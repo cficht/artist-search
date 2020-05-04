@@ -17,5 +17,17 @@ exports[`Search component renders Search 1`] = `
     </button>
   </form>
   <ul />
+  <button
+    disabled={true}
+    onClick={[Function]}
+  >
+    Back
+  </button>
+  <button
+    disabled={true}
+    onClick={[Function]}
+  >
+    Forward
+  </button>
 </Fragment>
 `;

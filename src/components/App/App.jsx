@@ -10,7 +10,7 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={SearchData} />
+        <Route exact path="/:search?" component={SearchData} />
       </Switch>
     </Router>
   );

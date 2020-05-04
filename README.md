@@ -61,8 +61,12 @@ Lyrics
 ## Next Steps
 - apiCall/handleSubmit
 - list
+- Paging for Search
+- searchTerm Query for Search Component
 
-- searchTerm Query
+- Artist component
+- Wrap Search's artists with links
+- fetchReleases function
 
 
 
