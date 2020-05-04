@@ -1,6 +1,17 @@
 import React from 'react';
-import RecordingData from '../../containers/RecordingData';
+import { 
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom';
+import SearchData from '../../containers/SearchData';
 
 export default function App() {
-  return <RecordingData />;
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={SearchData} />
+      </Switch>
+    </Router>
+  );
 }

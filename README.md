@@ -9,18 +9,18 @@
 [] Search
 [] Artist
 [] Album
-[] Recording
+[X] Recording
 
 ### Containers
 [] Search
 
 ### Services
 [] musicbrainz
-[] - getArtists
+[X] - getArtists
 [] - getReleases
 [] - getRecordings
-[] lyrics
-[] - getLyrics
+[X] lyrics
+[X] - getLyrics
 
 ### Hooks
 
@@ -56,7 +56,13 @@ Name
 Lyrics
 - Lyrics API - https://api.lyrics.ovh/v1/${artistName}/${recordingName}
 
+-----------
 
+## Next Steps
+- apiCall/handleSubmit
+- list
+
+- searchTerm Query
 
 
 
