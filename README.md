@@ -81,11 +81,10 @@ Lyrics
 - Release
 - ReleaseData
 - wrap Artist release's with Link
-
-## Next Steps
-
 - fetchRecordings
 - update ReleaseData
+
+## Next Steps
 
 - update Recording and RecordingData
 

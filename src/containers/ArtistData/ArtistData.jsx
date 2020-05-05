@@ -5,7 +5,6 @@ import Paging from '../../components/Paging/Paging';
 import { fetchReleases } from '../../services/musicbrainz/musicbrainz';
 
 const ArtistData = () => {
-
   const [releases, setReleases] = useState([]);
   const [page, setPage] = useState(0);
   
