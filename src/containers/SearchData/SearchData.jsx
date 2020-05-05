@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Search from '../components/Search/Search';
-import { fetchArtists } from '../services/musicbrainz';
+import Search from '../../components/Search/Search';
+import { fetchArtists } from '../../services/musicbrainz';
 import { useParams, useHistory } from 'react-router-dom';
 
 const SearchData = () => {

@@ -63,10 +63,13 @@ Lyrics
 - list
 - Paging for Search
 - searchTerm Query for Search Component
-
 - Artist component
 - Wrap Search's artists with links
 - fetchReleases function
+
+- Placeholder cover art
+- Artist paging
+- Query String for Artist
 
 
 

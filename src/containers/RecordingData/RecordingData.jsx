@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Recording from '../components/Recording/Recording';
-import { fetchLyrics } from '../services/lyrics';
+import Recording from '../../components/Recording/Recording';
+import { fetchLyrics } from '../../services/lyrics';
 
 const RecordingData = () => {
   // const artist = 'The Beatles';
