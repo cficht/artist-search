@@ -6,18 +6,21 @@
 
 ### Components
 [] Header
-[] Search
+[X] Search
 [] Artist
 [] Album
 [X] Recording
 
 ### Containers
-[] Search
+[X] Search
+[] Artist
+[] Album
+[] Recording
 
 ### Services
 [] musicbrainz
 [X] - getArtists
-[] - getReleases
+[X] - getReleases
 [] - getRecordings
 [X] lyrics
 [X] - getLyrics
@@ -68,8 +71,12 @@ Lyrics
 - fetchReleases function
 - Placeholder cover art
 - Artist paging
+- Query String for Artist (paging part of string)
 
-- Query String for Artist
+- Release
+- fetchRecordings
+- ReleaseData
+
 - refactor (hooks, reuseable functions/components)
 
 
