@@ -78,13 +78,15 @@ Lyrics
 - Reloading page
 - Same search
 - Header
-
-## Next Steps
-
 - Release
 - ReleaseData
 - wrap Artist release's with Link
+
+## Next Steps
+
+
 - fetchRecordings
+- update ReleaseData
 
 - update Recording and RecordingData
 
