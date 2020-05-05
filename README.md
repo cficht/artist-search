@@ -75,10 +75,11 @@ Lyrics
 - Query String for Artist (paging part of string)
 - Add Page Number To Search (NEW)
 - Move placeholder into service call (artwork.front, save placeholder image and import it)
+- Reloading page
+- Same search
+- Header
 
 ## Next Steps
-
-- Header
 
 - Release
 - ReleaseData
