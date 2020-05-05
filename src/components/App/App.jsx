@@ -9,6 +9,7 @@ import SearchData from '../../containers/SearchData/SearchData';
 import ArtistData from '../../containers/ArtistData/ArtistData';
 import ReleaseData from '../../containers/ReleaseData/ReleaseData';
 import RecordingData from '../../containers/RecordingData/RecordingData';
+import './App.css';
 
 export default function App() {
   return (

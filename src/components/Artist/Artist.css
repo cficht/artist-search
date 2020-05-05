@@ -1,15 +1,43 @@
 .Artist {
+  padding: 10px 10px 10px 10px;
+
+  background-color: red;
+  color: white;
+  text-align: center;
+
   ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-block-start: 0em;
+    padding-inline-start: 0px;
+
+    overflow: auto;
     list-style-type: none;
   }
 
   li {
+    float: left;
+
     padding: 10px;
     margin: 10px;
+    width: 17%;
+    border-radius: 10px;
+
+    background-color: darkblue;
+
+    text-align: center;
   }
 
   img {
     height: 200px;
     width: 200px;
+    margin: 10px;
+  }
+
+  a {
+    color: white;
+    font-size: 16px;
   }
 }

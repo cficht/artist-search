@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Recording.css';
 
 const Recording = ({ artist, recording, lyrics }) => (
-  <>
-    <h1>{artist}</h1>
-    <h2>{recording}</h2>
+  <section className={styles.Recording}>
+    <h1>{`${artist} - ${recording}`}</h1>
     <p>{lyrics}</p>
-  </>
+  </section>
 );
 
 Recording.propTypes = {

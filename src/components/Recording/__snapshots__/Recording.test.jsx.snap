@@ -1,15 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Recording component renders Recording 1`] = `
-<Fragment>
+<section
+  className="Recording"
+>
   <h1>
-    The Beatles
+    The Beatles - Please Please Me
   </h1>
-  <h2>
-    Please Please Me
-  </h2>
   <p>
     Oh yeah
   </p>
-</Fragment>
+</section>
 `;

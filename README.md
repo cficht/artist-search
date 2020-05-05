@@ -86,11 +86,14 @@ Lyrics
 - wrap Release recording's with Link
 - update Recording and RecordingData
 - no Lyrics
+- basic style
 
 ## Next Steps
 
-- style
-- refactor (hooks, reuseable functions/components)
+- album title and art
+- more style (color palette, fonts)
+- tests
+- refactor (euseable functions/components)
 - error handling?
 
 

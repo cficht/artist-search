@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import styles from './Search.css';
 
 const Search = ({ artistText, artists, handleChange, handleSubmit }) => {
   const artistNodes = artists.map(artist => (
@@ -10,19 +11,19 @@ const Search = ({ artistText, artists, handleChange, handleSubmit }) => {
   ));
 
   return (
-    <>
-      <section>
+    <section className={styles.Search}>
+      <article className={styles.Input}>
         <form onSubmit={handleSubmit}>
           <input type="text" value={artistText || ''} onChange={handleChange}/>
           <button type="submit">Submit</button>
         </form>
-      </section>
-      <section>
+      </article>
+      <article className={styles.List}>
         <ul>
           {artistNodes}
         </ul>
-      </section>
-    </>
+      </article>
+    </section>
   );
 };
 

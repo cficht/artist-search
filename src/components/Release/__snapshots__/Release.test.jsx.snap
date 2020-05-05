@@ -1,10 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Release component renders Release 1`] = `
-<section>
+<section
+  className="Release"
+>
   <h2>
     The Beatles
   </h2>
-  <ul />
+  <article
+    className="List"
+  >
+    <ul />
+  </article>
 </section>
 `;

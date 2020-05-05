@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Search component renders Search 1`] = `
-<Fragment>
-  <section>
+<section
+  className="Search"
+>
+  <article
+    className="Input"
+  >
     <form
       onSubmit={[Function]}
     >
@@ -17,9 +21,11 @@ exports[`Search component renders Search 1`] = `
         Submit
       </button>
     </form>
-  </section>
-  <section>
+  </article>
+  <article
+    className="List"
+  >
     <ul />
-  </section>
-</Fragment>
+  </article>
+</section>
 `;

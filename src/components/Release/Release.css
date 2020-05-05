@@ -1,0 +1,39 @@
+.Release {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  flex-direction: column;
+
+  background-color: red;
+  color: white;
+
+  text-align: center;
+}
+
+.List {
+  display: flex;
+  justify-content: center;
+
+  width: 30%;
+  margin: 10px 20px 20px 20px;
+  padding: 20px;
+  border-radius: 10px;
+
+  background-color: darkblue;
+
+  ul {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
+    list-style-type: none;
+  }
+
+  li {
+    margin: 10px;
+  }
+
+  a {
+    color: white;
+    font-size: 16px;
+  }
+}

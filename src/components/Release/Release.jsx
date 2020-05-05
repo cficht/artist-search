@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import styles from './Release.css';
 
 const Release = ({ artistName, recordings }) => {
   const recordingNodes = recordings.map(recording => (
@@ -10,11 +11,13 @@ const Release = ({ artistName, recordings }) => {
   ));
 
   return (
-    <section>
+    <section className={styles.Release}>
       <h2>{artistName}</h2>
-      <ul>
-        {recordingNodes}
-      </ul>
+      <article className={styles.List}>
+        <ul>
+          {recordingNodes}
+        </ul>
+      </article>
     </section>
   );
 };
