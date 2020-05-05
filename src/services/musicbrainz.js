@@ -7,11 +7,15 @@ export const fetchArtists = (search, page) => {
     })));
 };
 
-export const fetchReleases = (artistId) => {
-  return fetch(`http://musicbrainz.org/ws/2/release?artist=${artistId}&fmt=json`)
+export const fetchReleases = (artistId, page) => {
+  return fetch(`http://musicbrainz.org/ws/2/release?artist=${artistId}&fmt=json&offset=${page}`)
     .then(res => res.json())
-    .then(artist => artist.releases.map(({ id, title }) => ({
-      id,
-      title
-    })));
+    .then(artist => {
+      const artistReleases = artist.releases.map(release => ({
+        id: release.id,
+        title: release.title,
+        art: release['cover-art-archive'].artwork
+      }));
+      return artistReleases;
+    });
 };

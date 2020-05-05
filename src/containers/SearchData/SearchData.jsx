@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Search from '../../components/Search/Search';
-import { fetchArtists } from '../../services/musicbrainz';
 import { useParams, useHistory } from 'react-router-dom';
+import Search from '../../components/Search/Search';
+import Paging from '../../components/Paging/Paging';
+import { fetchArtists } from '../../services/musicbrainz';
 
 const SearchData = () => {
   const [artistText, setArtistText] = useState('');
@@ -34,6 +35,7 @@ const SearchData = () => {
       .then(artists => setArtists(artists));
   };
 
+  // REFACTOR
   const handlePage = (val) => {
     setPage(page + val);
     fetchArtists(artistText, (page + val) * 25)
@@ -42,7 +44,8 @@ const SearchData = () => {
 
   return (
     <>
-      <Search artistText={artistText} artists={artists} page={page} handleChange={handleChange} handleSubmit={handleSubmit} handlePage={handlePage}/>
+      <Search artistText={artistText} artists={artists} handleChange={handleChange} handleSubmit={handleSubmit}/>
+      <Paging page={page} list={artists} handlePage={handlePage}/>
     </>
   );
 };

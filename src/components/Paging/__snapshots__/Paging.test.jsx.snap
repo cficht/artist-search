@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paging component renders Paging 1`] = `
+<Fragment>
+  <button
+    disabled={true}
+    onClick={[Function]}
+  >
+    Back
+  </button>
+  <button
+    disabled={true}
+    onClick={[Function]}
+  >
+    Forward
+  </button>
+</Fragment>
+`;

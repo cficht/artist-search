@@ -66,10 +66,11 @@ Lyrics
 - Artist component
 - Wrap Search's artists with links
 - fetchReleases function
-
 - Placeholder cover art
 - Artist paging
+
 - Query String for Artist
+- refactor (hooks, reuseable functions/components)
 
 
 
