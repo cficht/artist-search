@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import Artist from '../../components/Artist/Artist';
 import Paging from '../../components/Paging/Paging';
-import { fetchReleases } from '../../services/musicbrainz';
+import { fetchReleases } from '../../services/musicbrainz/musicbrainz';
 
 const ArtistData = () => {
 

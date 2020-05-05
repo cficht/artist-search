@@ -7,15 +7,16 @@
 ### Components
 [] Header
 [X] Search
-[] Artist
-[] Release
-[X] Recording
-
-### Containers
-[X] Search
-[] Artist
+[X] Artist
+[X] Paging
 [] Release
 [] Recording
+
+### Containers
+[X] SearchData
+[X] ArtistData
+[] ReleaseData
+[] RecordingData
 
 ### Services
 [] musicbrainz
@@ -78,10 +79,17 @@ Lyrics
 ## Next Steps
 
 - Header
+
 - Release
-- fetchRecordings
 - ReleaseData
+- wrap Artist release's with Link
+- fetchRecordings
+
+- update Recording and RecordingData
+
+- style
 - refactor (hooks, reuseable functions/components)
+- error handling?
 
 
 

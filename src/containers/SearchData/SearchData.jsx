@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import Search from '../../components/Search/Search';
 import Paging from '../../components/Paging/Paging';
-import { fetchArtists } from '../../services/musicbrainz';
+import { fetchArtists } from '../../services/musicbrainz/musicbrainz';
 
 const SearchData = () => {
   const [artistText, setArtistText] = useState('');
