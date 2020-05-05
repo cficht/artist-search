@@ -5,7 +5,6 @@ import { fetchRecordings } from '../../services/musicbrainz/musicbrainz';
 
 const ReleaseData = () => {
   const [recordings, setRecordings] = useState([]);
-
   let { artistName, releaseId } = useParams();
 
   useEffect(() => {

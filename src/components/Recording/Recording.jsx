@@ -12,7 +12,7 @@ const Recording = ({ artist, recording, lyrics }) => (
 Recording.propTypes = {
   artist: PropTypes.string.isRequired,
   recording: PropTypes.string.isRequired,
-  lyrics: PropTypes.string.isRequired
+  lyrics: PropTypes.string
 };
 
 export default Recording;

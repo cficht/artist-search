@@ -7,7 +7,6 @@ import { fetchReleases } from '../../services/musicbrainz/musicbrainz';
 const ArtistData = () => {
   const [releases, setReleases] = useState([]);
   const [page, setPage] = useState(0);
-  
   let { artistName, artistId, pageNum } = useParams();
   let history = useHistory();
 

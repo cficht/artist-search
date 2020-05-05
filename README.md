@@ -83,10 +83,11 @@ Lyrics
 - wrap Artist release's with Link
 - fetchRecordings
 - update ReleaseData
+- wrap Release recording's with Link
+- update Recording and RecordingData
+- no Lyrics
 
 ## Next Steps
-
-- update Recording and RecordingData
 
 - style
 - refactor (hooks, reuseable functions/components)

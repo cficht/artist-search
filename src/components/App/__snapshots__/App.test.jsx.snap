@@ -19,6 +19,11 @@ exports[`App component renders App 1`] = `
       exact={true}
       path="/release/:artistName/:releaseId"
     />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/recording/:artistName/:recordingName"
+    />
   </Switch>
 </BrowserRouter>
 `;

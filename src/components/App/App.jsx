@@ -8,6 +8,7 @@ import Header from '../Header/Header';
 import SearchData from '../../containers/SearchData/SearchData';
 import ArtistData from '../../containers/ArtistData/ArtistData';
 import ReleaseData from '../../containers/ReleaseData/ReleaseData';
+import RecordingData from '../../containers/RecordingData/RecordingData';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route exact path="/:search?/:pageNum?" component={SearchData} />
         <Route exact path="/artist/:artistName/:artistId/:pageNum" component={ArtistData} />
         <Route exact path="/release/:artistName/:releaseId" component={ReleaseData} />
+        <Route exact path="/recording/:artistName/:recordingName" component={RecordingData} />
       </Switch>
     </Router>
   );

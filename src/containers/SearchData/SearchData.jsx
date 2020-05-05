@@ -5,11 +5,9 @@ import Paging from '../../components/Paging/Paging';
 import { fetchArtists } from '../../services/musicbrainz/musicbrainz';
 
 const SearchData = () => {
-  const [artistText, setArtistText] = useState('');
-  
+  const [artistText, setArtistText] = useState(''); 
   const [artists, setArtists] = useState([]);
   const [page, setPage] = useState(0);
-
   let { search, pageNum } = useParams();
   let history = useHistory();
   let location = useLocation();

@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Release = ({ artistName, recordings }) => {
   const recordingNodes = recordings.map(recording => (
     <li key={recording.id}>
-      {recording.title}
+      <Link to={`/recording/${artistName}/${recording.title}`}>{recording.title}</Link>
     </li>
   ));
 
