@@ -20,3 +20,13 @@ export const fetchReleases = (artistId, page) => {
         art: release['cover-art-archive'].front ? `http://coverartarchive.org/release/${release.id}/front` : placeholder
       })));
 };
+
+export const fetchRecordings = (releaseId) => {
+  return fetch(`http://musicbrainz.org/ws/2/recording?release=${releaseId}&fmt=json`)
+    .then(res => res.json())
+    .then(res => 
+      res.recordings.map(recording => ({
+        id: recording.id,
+        title: recording.title
+      })));
+};

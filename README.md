@@ -84,7 +84,6 @@ Lyrics
 
 ## Next Steps
 
-
 - fetchRecordings
 - update ReleaseData
 
