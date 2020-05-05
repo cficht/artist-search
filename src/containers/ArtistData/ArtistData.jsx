@@ -5,22 +5,23 @@ import Paging from '../../components/Paging/Paging';
 import { fetchReleases } from '../../services/musicbrainz';
 
 const ArtistData = () => {
+
   const [releases, setReleases] = useState([]);
   const [page, setPage] = useState(0);
-
-  let { artistId, pageNum } = useParams();
+  let { artistName, artistId, pageNum } = useParams();
   let history = useHistory();
+
+  // REFACTOR FOR REUSE
 
   useEffect(() => {
     setPage(Number(pageNum));
-    fetchReleases(artistId, pageNum * 25)
+    fetchReleases(artistId, pageNum)
       .then(releases => setReleases(releases));
   }, [pageNum]);
 
-  // REFACTOR
   const handlePage = (val) => {
     setPage(page + val);
-    fetchReleases(artistId, (page + val) * 25)
+    fetchReleases(artistId, (page + val))
       .then(releases => setReleases(releases));
     pageNum = (page + val);
     history.push(`${pageNum}`);
@@ -28,7 +29,7 @@ const ArtistData = () => {
 
   return (
     <>
-      <Artist releases={releases} />
+      <Artist artistName={artistName} releases={releases} />
       <Paging page={page} list={releases} handlePage={handlePage}/>
     </>
   );

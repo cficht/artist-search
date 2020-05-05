@@ -6,15 +6,18 @@ import { fetchArtists } from '../../services/musicbrainz';
 
 const SearchData = () => {
   const [artistText, setArtistText] = useState('');
+  
   const [artists, setArtists] = useState([]);
   const [page, setPage] = useState(0);
-
-  let { search } = useParams();
+  let { search, pageNum } = useParams();
   let history = useHistory();
+
+  // SEARCH PAGE SPECIFIC
 
   useEffect(() => {
     if(search){
-      fetchArtists(search, 0)
+      setPage(Number(pageNum));
+      fetchArtists(search, pageNum)
         .then(artists => setArtists(artists));
     }
   }, []);
@@ -33,13 +36,23 @@ const SearchData = () => {
     setPage(0);
     fetchArtists(artistText, 0)
       .then(artists => setArtists(artists));
+    history.push(`${artistText}/0`);
   };
 
-  // REFACTOR
+  // REFACTOR FOR REUSE
+
+  useEffect(() => {
+    setPage(Number(pageNum));
+    fetchArtists(artistText, pageNum)
+      .then(artists => setArtists(artists));
+  }, [pageNum]);
+
   const handlePage = (val) => {
     setPage(page + val);
-    fetchArtists(artistText, (page + val) * 25)
+    fetchArtists(artistText, (page + val))
       .then(artists => setArtists(artists));
+    pageNum = (page + val);
+    history.push(`${pageNum}`);
   };
 
   return (

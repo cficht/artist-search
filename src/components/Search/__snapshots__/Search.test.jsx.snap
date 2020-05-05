@@ -2,20 +2,24 @@
 
 exports[`Search component renders Search 1`] = `
 <Fragment>
-  <form
-    onSubmit={[Function]}
-  >
-    <input
-      onChange={[Function]}
-      type="text"
-      value="The Beatles"
-    />
-    <button
-      type="submit"
+  <section>
+    <form
+      onSubmit={[Function]}
     >
-      Submit
-    </button>
-  </form>
-  <ul />
+      <input
+        onChange={[Function]}
+        type="text"
+        value="The Beatles"
+      />
+      <button
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </section>
+  <section>
+    <ul />
+  </section>
 </Fragment>
 `;

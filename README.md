@@ -1,6 +1,6 @@
 # Artist Search
 
------------
+# -----------
 
 ## OVERVIEW
 
@@ -8,13 +8,13 @@
 [] Header
 [X] Search
 [] Artist
-[] Album
+[] Release
 [X] Recording
 
 ### Containers
 [X] Search
 [] Artist
-[] Album
+[] Release
 [] Recording
 
 ### Services
@@ -27,7 +27,7 @@
 
 ### Hooks
 
------------
+# -----------
 
 ## DETAILS
 
@@ -59,9 +59,9 @@ Name
 Lyrics
 - Lyrics API - https://api.lyrics.ovh/v1/${artistName}/${recordingName}
 
------------
+# -----------
 
-## Next Steps
+## Done
 - apiCall/handleSubmit
 - list
 - Paging for Search
@@ -72,11 +72,15 @@ Lyrics
 - Placeholder cover art
 - Artist paging
 - Query String for Artist (paging part of string)
+- Add Page Number To Search (NEW)
+- Move placeholder into service call (artwork.front, save placeholder image and import it)
 
+## Next Steps
+
+- Header
 - Release
 - fetchRecordings
 - ReleaseData
-
 - refactor (hooks, reuseable functions/components)
 
 

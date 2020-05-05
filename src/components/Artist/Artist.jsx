@@ -2,26 +2,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Artist.css';
 
-const Artist = ({ releases }) => {
+const Artist = ({ artistName, releases }) => {
   const releaseNodes = releases.map(release => (
-    <li key={release.id}>
-      <img src={release.art ? `http://coverartarchive.org/release/${release.id}/front` : 'https://i2.wp.com/www.wmhbradio.org/wp-content/uploads/2016/07/albumcover-placeholder.jpg'} />
+    <li key={release.id}> 
+      <img src={release.art} />
       <h3>{release.title}</h3>
     </li>  
   ));
+
   return (
-    <div className={styles.Artist}>
+    <section className={styles.Artist}>
+      <h2>{artistName}</h2>
       <ul>
         {releaseNodes}
       </ul>
-    </div>
+    </section>
   );
 };
 
 Artist.propTypes = {
+  artistName: PropTypes.string.isRequired,
   releases: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired
   })).isRequired
 };
 

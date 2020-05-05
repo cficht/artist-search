@@ -6,12 +6,12 @@ exports[`App component renders App 1`] = `
     <Route
       component={[Function]}
       exact={true}
-      path="/:search?"
+      path="/:search?/:pageNum?"
     />
     <Route
       component={[Function]}
       exact={true}
-      path="/artist/:artistId"
+      path="/artist/:artistName/:artistId/:pageNum"
     />
   </Switch>
 </BrowserRouter>

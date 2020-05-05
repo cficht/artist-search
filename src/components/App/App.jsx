@@ -11,8 +11,8 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/:search?" component={SearchData} />
-        <Route exact path="/artist/:artistId/:pageNum" component={ArtistData} />
+        <Route exact path="/:search?/:pageNum?" component={SearchData} />
+        <Route exact path="/artist/:artistName/:artistId/:pageNum" component={ArtistData} />
       </Switch>
     </Router>
   );
