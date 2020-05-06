@@ -87,14 +87,12 @@ Lyrics
 - update Recording and RecordingData
 - no Lyrics
 - basic style
+- more style (color palette, fonts)
 
 ## Next Steps
 
-- album title and art
-- more style (color palette, fonts)
 - tests
-- refactor (euseable functions/components)
-- error handling?
+- refactor (reuseable functions/components, clear code)
 
 
 

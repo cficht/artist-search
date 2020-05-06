@@ -3,8 +3,8 @@
   justify-content: center;  
   align-items: center;
   flex-direction: column;
-
-  background-color: red;
+  border-radius: 10px;
+  background-color: #ffb367;
 }
 
 .Input {
@@ -18,7 +18,7 @@
   padding: 20px;
   border-radius: 10px;
 
-  background-color: darkblue;
+  background-color: #58b4ae;
 
   form {
     display: flex;
@@ -36,8 +36,8 @@
   button {
     margin: 15px 5px 5px 5px;
 
-    background-color: #142850;
-    color: white;
+    background-color: #ffe277;
+    color: black;;
 
     font-size: 16px;
     text-align: center;
@@ -47,13 +47,11 @@
 .List {
   display: flex;
   justify-content: center;
-
   width: 30%;
   margin: 10px 20px 20px 20px;
   padding: 20px;
   border-radius: 10px;
-
-  background-color: darkblue;
+  background-color: #58b4ae;
 
   ul {
     margin-block-start: 0em;
@@ -64,6 +62,7 @@
 
   a {
     color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
   }
 }
