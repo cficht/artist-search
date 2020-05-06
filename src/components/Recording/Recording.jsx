@@ -5,7 +5,9 @@ import styles from './Recording.css';
 const Recording = ({ artist, recording, lyrics }) => (
   <section className={styles.Recording}>
     <h1>{`${artist} - ${recording}`}</h1>
-    <p>{lyrics}</p>
+    <pre>
+      <p>{lyrics}</p>
+    </pre>
   </section>
 );
 

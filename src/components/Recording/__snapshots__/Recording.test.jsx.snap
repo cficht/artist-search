@@ -7,8 +7,10 @@ exports[`Recording component renders Recording 1`] = `
   <h1>
     The Beatles - Please Please Me
   </h1>
-  <p>
-    Oh yeah
-  </p>
+  <pre>
+    <p>
+      Oh yeah
+    </p>
+  </pre>
 </section>
 `;
