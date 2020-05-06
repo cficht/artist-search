@@ -12,12 +12,8 @@ const SearchData = () => {
   let history = useHistory();
   let location = useLocation();
 
-  // SEARCH PAGE SPECIFIC
-
   useEffect(() => {
-    if(search){
-      setPage(Number(pageNum));
-    } 
+    if(search) setPage(Number(pageNum));
   }, []);
 
   useEffect(() => {
@@ -43,8 +39,6 @@ const SearchData = () => {
     setPage(0);
     history.push(`${artistText}/0`);
   };
-
-  // REFACTOR FOR REUSE
 
   useEffect(() => {
     if(pageNum) {

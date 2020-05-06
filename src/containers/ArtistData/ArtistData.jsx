@@ -10,8 +10,6 @@ const ArtistData = () => {
   let { artistName, artistId, pageNum } = useParams();
   let history = useHistory();
 
-  // REFACTOR FOR REUSE
-
   useEffect(() => {
     if(pageNum) {
       setPage(Number(pageNum));

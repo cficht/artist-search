@@ -5,7 +5,7 @@ exports[`Header component renders Header 1`] = `
   className="Header"
 >
   <h1>
-    Artist-Search
+    Artist Search
   </h1>
   <Link
     to="/"

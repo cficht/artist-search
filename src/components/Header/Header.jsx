@@ -4,7 +4,7 @@ import styles from './Header.css';
 
 const Header = () => (
   <header className={styles.Header}>
-    <h1>Artist-Search</h1>
+    <h1>Artist Search</h1>
     <Link to={'/'}>Home</Link>
   </header>
 );

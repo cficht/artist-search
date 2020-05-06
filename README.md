@@ -88,11 +88,12 @@ Lyrics
 - no Lyrics
 - basic style
 - more style (color palette, fonts)
+- tests
+- refactor (reuseable functions/components, clear code)
 
 ## Next Steps
 
-- tests
-- refactor (reuseable functions/components, clear code)
+
 
 
 
