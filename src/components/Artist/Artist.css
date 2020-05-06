@@ -1,0 +1,39 @@
+.Artist {
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  background-color: #ffb367;
+  color: white;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block-start: 0em;
+    padding-inline-start: 0px;
+    overflow: auto;
+    list-style-type: none;
+  }
+
+  li {
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    width: 17%;
+    border-radius: 10px;
+    background-color: #58b4ae;
+    text-align: center;
+  }
+
+  img {
+    height: 50%;
+    width: 50%;
+    margin: 10px;
+  }
+
+  a {
+    color: white;
+    font-size: 16px;
+  }
+}

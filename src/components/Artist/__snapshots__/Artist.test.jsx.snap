@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Artist component renders Artist 1`] = `
+<section
+  className="Artist"
+>
+  <h2>
+    The Beatles
+  </h2>
+  <ul />
+</section>
+`;

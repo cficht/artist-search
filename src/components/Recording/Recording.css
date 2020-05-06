@@ -1,0 +1,17 @@
+.Recording {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #ffb367;
+  color: white;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  p {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #58b4ae;
+  }
+}

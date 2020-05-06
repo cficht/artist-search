@@ -1,5 +1,5 @@
 {
-  "name": "Artist Search",
+  "name": "artist-search",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -24,7 +24,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "react-router-dom": "^5.1.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/plugin-proposal-class-properties": "^7.8.3",

@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 auto;
+  width: 70%;
+  background-color: #58b4ae;
+}
